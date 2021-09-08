@@ -13,7 +13,7 @@ import Logo from '../../assets/logo.svg'
 import Menu from '../../assets/hamburger.png'
 import Botao from '../Botao/Botao'
 
-const Header = ({}) => {
+const Header = () => {
     const {isOpen, toggle} = useContext(AppContext)
     console.log(isOpen)
     return (
