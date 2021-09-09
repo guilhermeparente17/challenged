@@ -28,7 +28,8 @@ export function AppProvider({ children }) {
       setIsOpenModal,
       togglePassowrd,
       isOpenPassword,
-      setIsOpenPassword
+      setIsOpenPassword,
+      setIsOpen
     }}>
       {children}
     </AppContext.Provider>

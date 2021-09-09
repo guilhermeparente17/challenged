@@ -58,7 +58,7 @@ const Modal = () => {
                     </ModalPassowrd>
                     
 
-                    <ModalBtnWrap>
+                    <ModalBtnWrap >
                         <ModalSubmit type="submit">login</ModalSubmit>
                     </ModalBtnWrap>
                 </ModalForm>

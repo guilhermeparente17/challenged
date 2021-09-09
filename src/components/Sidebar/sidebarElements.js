@@ -89,9 +89,7 @@ color: #fff;
         }
     `
 
-    export const SidebarHeader = styled.div`
+    export const SidebarBtnWrap = styled.div`
         
     `
-    export const HeaderLogo = styled.img`
-
-    `
+ 

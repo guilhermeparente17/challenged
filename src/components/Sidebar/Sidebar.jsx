@@ -7,23 +7,26 @@ import {
     CloseIcon,
     SidebarWrapper,
     SidebarMenu, 
-    SidebarLink
+    SidebarLink,
+    SidebarBtnWrap
 } from './sidebarElements'
 
 
 const Sidebar = () => {
-    const {isOpen, toggle} = useContext(AppContext)
+    const {isOpen, toggle, toggleModal} = useContext(AppContext)
     return (
-        <SidebarContainer isOpen={isOpen} onClick={toggle}>
+        <SidebarContainer isOpen={isOpen}>
                 <Icon onClick={toggle}>
                     <CloseIcon />
                 </Icon>
-            <SidebarWrapper>
+            <SidebarWrapper  onClick={toggle}>
                 <SidebarMenu>
                     <SidebarLink to="/" onClick={toggle}>How it works</SidebarLink>
                     <SidebarLink to="/" onClick={toggle}>About Us</SidebarLink>
                 </SidebarMenu>
-                <Botao />
+                <SidebarBtnWrap onClick={toggleModal}>
+                    <Botao onClick={toggleModal} />
+                </SidebarBtnWrap>                
             </SidebarWrapper>
         </SidebarContainer>
     )
