@@ -14,7 +14,7 @@ import Menu from '../../assets/hamburger.png'
 import Botao from '../Botao/Botao'
 
 const Header = () => {
-    const {isOpen, toggle} = useContext(AppContext)
+    const {isOpen, toggle, toggleModal} = useContext(AppContext)
     console.log(isOpen)
     return (
         <div>
@@ -25,7 +25,7 @@ const Header = () => {
                     <HeaderLink>How it works</HeaderLink>
                     <HeaderLink>About Us</HeaderLink>
                 </HeaderMenu>
-                <HeaderButtonWrap>
+                <HeaderButtonWrap onClick={toggleModal}>
                     <Botao />
                 </HeaderButtonWrap>
             </HeaderContainer>

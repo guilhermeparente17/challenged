@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../../components/Header/Header'
+import Modal from '../../components/Modal/Modal'
 import Sidebar from '../../components/Sidebar/Sidebar'
-
 
 
 const Homepage = () => {
@@ -9,6 +9,7 @@ const Homepage = () => {
         <div>
             <Header  />
             <Sidebar />
+            <Modal />
         </div>
     )
 }
