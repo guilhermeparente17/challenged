@@ -12,7 +12,7 @@ const Mainpage = () => {
     return (
         <div>
             <MainContainer>
-                <Form />
+                
             </MainContainer>
             <MainFooter>
 
