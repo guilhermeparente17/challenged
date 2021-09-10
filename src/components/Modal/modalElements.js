@@ -22,6 +22,12 @@ export const ModalCard = styled.div`
     display: flex;
     flex-direction: column;
     position: relative;
+
+    @media screen and (max-width: 600px){
+        width: 100vh;
+        height: 100vh;
+        padding: 25px;
+    }
 `
 
 
@@ -76,6 +82,10 @@ export const ModalInput = styled.input`
     outline: 0;
     font-size: 22px;
     color: white;
+
+    @media screen and (max-width: 600px){
+        width: 100%;
+    }
     
     
 `
@@ -107,6 +117,11 @@ export const ModalSubmit = styled.button`
     color: #744FF4;
     border-radius: 4px;
     margin-top: 7px;
+
+    @media screen and (max-width: 600px){
+        width: 100%;
+        height: 48px;
+    }
 `
 export const ModalCloseBtn = styled.img`
     position: absolute;
@@ -115,11 +130,23 @@ export const ModalCloseBtn = styled.img`
     top: -20px;
     right:-20px;
     cursor: pointer;
+    
+
+    @media screen and (max-width: 600px){
+        top: 0;
+        right: 0;
+        width: 25px;
+        margin: 30px 30px 0 0;
+    }
 `
 export const ModalBtnWrap = styled.div`
     display: flex;
     justify-content: flex-end;
     cursor: pointer;
+
+    @media screen and (max-width: 600px){
+        justify-content: center;
+    }
 `
 export const ModalPassowrd = styled.div`
     position: relative;
@@ -131,4 +158,12 @@ export const ModelIconPass = styled.img`
     top: 15px;
     right: 10px;
     cursor: pointer;
+
+    @media screen and (max-width: 600px){
+        right: 3%;
+    }
+`
+
+export const DivInput = styled.div`
+
 `
